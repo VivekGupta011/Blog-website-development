@@ -145,18 +145,19 @@ main .site-title .site-background h1{
 main .site-title .site-background .btn{
     font-family: var(--Lexend_Deca);
     border: none;
-    font-size: 1.0rem;
+    font-size: .9rem;
     border-radius: 15px;
-    padding: 5px 15px;
+    font-weight: 610;
+    padding: 8px 22px;
     margin: 5px;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     cursor: pointer;
 
    
 
 }
 
- button .btn:hover{
+main .site-title .site-background .btn:hover{
     background: transparent;
     color: var(--white);
     border: 1px solid var(--white);
@@ -239,7 +240,7 @@ main .site-content .post-content>.post-image .post-info span{
 }
 main .post-content .post-title a{
     font-family: var(--Lexend_Deca);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 
 }
 .site-content .post-content .post-title .post-btn{
@@ -332,19 +333,139 @@ main .post-content .post-title a{
     border: 1px solid var(--grey-text);
     cursor:pointer;
 }
+
+.site-content .sidebar .popular-tags div.tags span.tag{
+    display: block;
+    background: var(--sky);
+    color:black;
+    padding: 4px 0px;
+    width: 60%;
+    height: 1.1rem;
+    border-radius: .5rem;
+    text-align: center;
+    margin: 1.3rem 0rem;
+    border:1px solid grey;
+    box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.2);
+}
 /* side bar- */
 /* site content-X */
 
-/* viewport is less than 757px and equal  */
+/* Footer */
 
-@media (max-width: 750px) {
-	.nav .nav-menu,.nav .nav-menu .nav-items{
-        flex-direction: column;
-        
+footer.footer{
+    height: 100%;
+    background: #696969;
+    position: relative;
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer.footer .container>div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: .5rem .9rem;
+}
+footer.footer .container h2{
+    color: var(--white);
+    font-family: var(--Livvic);
+}
+footer.footer .container p{
+    color:whitesmoke;
+}
+footer.footer .instagram div > img{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+footer.footer .newsletter .form-element input{
+    width: 72%;
+    height: 1.4rem;
+    border: none;
+    font-size: 1rem;
+    padding: .2rem 0.2rem;
+   
+   
+} 
+footer.footer .newsletter .form-element span{
+   
+    background: var(--sky);
+    padding: 8px 8px;
+    margin-right: px;
+}
+footer.footer .container .follow div >a{
+    color: var(--white);
+    background: transparent;
+    font-size: .4rem .7rem;
+    margin: .4rem .3rem;
+}
+footer.footer div.move-up{
+    position: absolute;
+    top: 56%;
+    right: 7%;
+    
+    
+}
+footer.footer div.move-up span{
+    color: var(--sky);
+}
+footer.footer div.move-up span:hover{
+    color: var(--white);
+}
+
+footer.footer .container .rights{
+    font-family: var(--Livvic);
+    justify-content: center;
+}
+/* Footer-X */
+
+/* viewport is less than or equal to 1130px */
+
+@media (max-width:1130px){
+    main .site-content .post-content>.post-image .post-info{
+        display: none !important;
     }
-    .nav .toggle-collaps{
-        display: block;
-        
+    footer.footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+
+/* viewport is less than or equal to 1130px-X */
+
+/* viewport is less than 750px and equal  */
+@media(max-width:750px){
+    main .site-content{
+        grid-template-columns: 100%;
+
     }
 }
-/* viewport is less than 757px and equal X */
+
+/* viewport is less than 750px and equal-X */
+
+/* viewport is less than 520px and equal- */
+@media(max-width:520px){
+    main .blog{
+        height: 125vh;
+    }
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+    footer.footer .container > div{
+        padding: 1rem .9rem !important;
+    }
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+}
+
+/* viewport is less than 520px and equal-X */
+
+
+
+
