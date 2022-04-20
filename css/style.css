@@ -9,7 +9,9 @@ html,body{
 /* Global classes */
 a{
     text-decoration: none;
-    color:var(--grey-text);
+    color:whitesmoke;
+    font-family:var(--Lexend_Deca);
+
 }
 
 
@@ -42,7 +44,8 @@ p{
 /* Global classes-X */
 /* navigation */
 .nav{
-    background: whitesmoke;
+    background: #222;
+    color: white;
     padding: 0 2rem;
     height: 0rem;
     min-height: 15vh;
@@ -77,8 +80,9 @@ p{
     
 }
 .nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
-    font-family: var(--Lexend_Deca);
+    padding: 1.0rem 0.6rem;
+    margin-left: -13px;
+    font-family: var(--Abel);
 }
 .nav .nav-items .nav-link:hover{
     background-color: var(--midnight);
@@ -110,8 +114,10 @@ p{
     padding: 1.7rem;
 
 }
+
+
 .collapse{
-    height: 40vh;
+    height: 36vh;
 }
 /* navigation-X*/
 
@@ -119,13 +125,17 @@ p{
 /* main site */
 /* hero section */
 main .site-title{
-    background: url(../assets/images/travell.png);
-    height:140vh;
+    background:rgba(0, 0, 0, 0.6) url(../assets/images/travelbg.png);
+    height: auto;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
+    width: 100%;
     font-family: var(--Livvic);
     color: var(--white);
+    /* opacity: 0.5; */
+    background-blend-mode: darken;
 }
 main .site-title .site-background{
     text-align: center;
@@ -167,7 +177,7 @@ main .site-title .site-background .btn:hover{
 
 main .site-title .site-background .tour-line{
     margin-top: 444px;
-    color: black;
+    color: var(--white);
     font-style: italic;
     font-size: 35px;
     word-spacing: 11px;
@@ -189,14 +199,14 @@ main .blog{
 
 }
 main .blog-post {
-    padding-top: 6rem;
+    padding-top: 2rem;
 }
 main .blog-post .blog-content{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 80%;
-    margin: 3rem 2rem;
+    width: 92%;
+    margin: 1rem 1.5rem;
 }
 /* blog Carousel-X */
 /* site content */
@@ -214,6 +224,18 @@ main .site-content .post-content > .post-image, .post-title{
     
 
 }
+
+/* sticky background */
+section .sticky-bg{
+    background-image: url(../assets/images/sticky-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 48%;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+/* sticky background-X*/
 /* this  part align our post info in between */
 main .site-content .post-content>.post-image .post-info{
     background:var(--sky);
@@ -260,6 +282,7 @@ main .post-content .post-title a{
     padding: 0.3rem .9rem;
     font-family: var(--Livvic);
     margin: 0px 8px;
+    color: black;
     border-radius: 13rem;
 }
 .site-content .pagination .pages{
@@ -449,7 +472,7 @@ footer.footer .container .rights{
 /* viewport is less than 520px and equal- */
 @media(max-width:520px){
     main .blog{
-        height: 125vh;
+        height: 95vh;
     }
     .site-content .post-content > .post-image .post-info{
         display: none;
@@ -460,6 +483,32 @@ footer.footer .container .rights{
     footer .rights{
         padding: 0 1.4rem;
         text-align: center;
+    }
+    main .site-title{
+        background:rgba(0, 0, 0, 0.3) url(../assets/images/hero.png);
+        background-repeat: no-repeat;
+        background-position: 75%;
+        background-size: cover;
+        height: 110vh;
+        width: 100%;
+        background-blend-mode: darken;
+
+    }
+    
+
+}
+@media(min-width:670px){
+    .nav .toggle-collapse .toggle-icons{
+        display: none;
+    }
+}
+
+@media(min-width:900px){
+    .nav .nav-items .nav-link{
+        padding: 1.0rem 0.9rem;
+        font-size: 19px;
+        margin-left: -13px;
+        font-family: var(--Abel);
     }
 
 }
