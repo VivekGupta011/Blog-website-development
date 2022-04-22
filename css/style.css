@@ -9,7 +9,7 @@ html,body{
 /* Global classes */
 a{
     text-decoration: none;
-    color:whitesmoke;
+    color:var(--grey-text);
     font-family:var(--Lexend_Deca);
 
 }
@@ -189,12 +189,15 @@ main .site-title .site-background .tour-line{
 
 
 /* blog Carousel */
+main .container{
+    margin: 0 3vh;
+}
 main .blog{
     background: url('../assets/images/Abract01.png');
-    height: 100vh;
+    height: 125vh;
     background-repeat: no-repeat;
     width: 100%;
-    background-size: 45%;
+    background-size: 75%;
     background-position: right;
 
 }
@@ -206,8 +209,41 @@ main .blog-post .blog-content{
     flex-direction: column;
     text-align: center;
     width: 92%;
-    margin: 1rem 1.5rem;
+    margin: 8rem 0.6rem;
+    box-shadow:  0 15px 20px rgba(0, 0, 0, 0.5);
+    padding: 11px;
 }
+
+main .blog .container .owl-carousel .blog-content .post-btn{
+    margin-right: 42px;
+    border-radius: 18px;
+    border: none;
+    padding: .7rem 1.5rem;
+    margin-left: 18px;
+    background: var(--sky);
+
+
+}
+main .blog .container .owl-carousel .blog-content .post-btn:hover{
+    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+}
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 64 auto;
+    width: 100%;
+
+}
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--midnight);
+}
+
 /* blog Carousel-X */
 /* site content */
 main .site-content{
@@ -472,7 +508,9 @@ footer.footer .container .rights{
 /* viewport is less than 520px and equal- */
 @media(max-width:520px){
     main .blog{
-        height: 95vh;
+        height: 135vh;
+        margin-left: -19px;
+        background-size: 141%;
     }
     .site-content .post-content > .post-image .post-info{
         display: none;
