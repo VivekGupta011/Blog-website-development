@@ -237,6 +237,7 @@ section .container .owl-nav{
 
 }
 .owl-theme .owl-nav [class*='owl-']{
+    background: dimgray;
     outline: none;
 }
 .owl-theme .owl-nav [class*='owl-']:hover{
