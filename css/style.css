@@ -368,7 +368,6 @@ main .post-content .post-title a{
 .site-content .sidebar .newsletter .input-element{
     width: 60%;
     height:1.5rem;
-    text-align: center;
     font-family: var(--Josefin_sans);
     font-size: 1.1rem;
     
@@ -398,7 +397,7 @@ main .post-content .post-title a{
     display: block;
     background: var(--sky);
     color:black;
-    padding: 4px 0px;
+    padding: 4px 2.2px;
     width: 60%;
     height: 1.1rem;
     border-radius: .5rem;
@@ -533,7 +532,44 @@ footer.footer .container .rights{
         background-blend-mode: darken;
 
     }
-    
+    main .site-title .site-background .tour-line{
+        color: white;
+        margin-top: 360px;
+        font-size: 22px;
+        font-family: 'Abel';
+
+    }
+    section .container .owl-nav{
+        margin-top: 70px;
+
+    }
+    .owl-theme .owl-nav [class*='owl-']{
+        font-size: 20px !important;
+    }
+    main .blog-post .blog-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 82%;
+        margin: 6rem 0.6rem;
+        box-shadow: 0 15px 20px rgb(0 0 0 / 70%);
+        padding: 33px;
+    }
+    .container .site-content .sidebar .newsletter{
+        text-align: center;
+
+    }
+    .container .site-content .sidebar .popular-post .tags{
+        text-align: center;
+        color: #104f55;
+
+
+
+    }
+    .container .site-content .sidebar .short-news .news-part{
+        display: flex;
+        margin: 8px;
+    }
 
 }
 @media(min-width:670px){
@@ -549,9 +585,16 @@ footer.footer .container .rights{
         margin-left: -13px;
         font-family: var(--Abel);
     }
+    
+    
 
 }
-
+@media(min-width:550px){
+    .site-content .sidebar .popular-tags{
+        display: none;
+    }
+   
+} 
 /* viewport is less than 520px and equal-X */
 
 
